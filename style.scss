@@ -1,0 +1,119 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.header {
+    z-index: 1000;
+    display: flex;
+    position: fixed;
+    width: 100%;
+    height: 70px;
+    background-color: #ff00ff;
+    align-items: center;
+    justify-content: center;
+    .nav{
+        width: 500px;
+        ul {
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            li {
+                a {
+                    text-decoration: none;
+                    color: #660066;
+                    font-size: 30px;
+                    transition: .3s linear;
+                    &:hover {
+                        color: #b941b9;
+                        transition: .3s linear;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.section {
+    background-color: #ff99ff;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    left: 0;
+    top: 70px;
+    padding-top: 10px;
+    min-height: 70vh;
+    .content {
+        display: flex;
+        width: 450px;
+        flex-direction: column;
+        .info_about_stas {
+            .info_element {
+                display: flex;
+                p {
+                    &:first-child {
+                        height: 15px;
+                        padding-right: 10px;
+                        color: rgb(59, 25, 45);
+                        margin-right: 10px;
+                    }
+                }
+                ol {
+                    margin-left: 10px;
+                    display: flex;
+                    flex-direction: column;
+                    li {               
+                        &:not(:last-child) {
+                            margin-right: 25px;
+                        }
+                    }
+                }
+                ul {
+                    margin-left: 10px;
+                    display: flex;
+                    flex-direction: column;
+                    li {               
+                        &:not(:last-child) {
+                            margin-right: 25px;
+                        }
+                    }
+                }
+            }
+        }
+        .lists {
+            width: 500px;
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+}
+.sub-sub-list {
+    margin-left: 20px;
+}
+.footer {
+    display: flex;
+    background-color: #660066;
+    width: 100%;
+    height: 200px;
+    top: 70px;
+    .footer_content {
+        padding: 15px 15px;
+        z-index: 1000;
+        display: flex;
+        flex-direction: column;
+        margin-top: 70px;
+        .footer_el {
+            display: flex;
+            p {
+                color:#ffb3ff;;
+                &:first-child {
+                    color: #ff80ff;
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+}
